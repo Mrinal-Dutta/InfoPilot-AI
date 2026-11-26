@@ -115,10 +115,15 @@ GOOGLE SEARCH RULES:
 10. A Google search result date is not automatically a verified
     official publication date.
 11. Clearly mention when information cannot be verified.
+12. Treat Google results as search leads, not proof that every detail is true.
+13. Do not add facts, dates, prices, model names or announcements that are not present in the returned search results.
+14. For each important factual claim, include the matching original source URL from the search results.
+15. If search snippets do not contain enough evidence, say so instead of filling gaps.
+16. Do not describe a claim as officially confirmed or independently verified unless the source result itself supports that wording.
 
 CONVERSATION RULES:
-12. Use previous messages to answer follow-up questions.
-13. Never ask users to repeat information already available
+17. Use previous messages to answer follow-up questions.
+18. Never ask users to repeat information already available
     in the conversation.
 """
 )
