@@ -1,4 +1,4 @@
-
+import re
 from dotenv import load_dotenv
 import os
 from pathlib import Path
@@ -267,6 +267,8 @@ if query:
                     if message:
                         response_box.markdown(message + " ▌")
 
+                # Convert HTML line breaks into readable separators
+                message = re.sub(r"<br\s*/?>", " • ", message, flags=re.IGNORECASE)
                 # Handle Empty Response
                 if not message:
                     message = "I couldn't generate a text response. Please try again."
