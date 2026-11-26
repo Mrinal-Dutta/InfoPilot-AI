@@ -22,7 +22,7 @@ serper_key = os.getenv("SERPER_API_KEY")
 
 # Page Settings
 st.set_page_config(
-    page_title="QuickAnswer",
+    page_title="InfoPilot AI",
     page_icon="⚡",
     layout="wide"
 )
@@ -97,7 +97,7 @@ agent = create_agent(
     model=llm,
     tools=tools,
     system_prompt="""
-You are QuickAnswer, a helpful and accurate AI assistant.
+You are InfoPilot AI, a helpful and accurate AI assistant.
 
 GENERAL RULES:
 1. Answer clearly and correctly.
@@ -183,7 +183,7 @@ header_col, button_col = st.columns([5, 1])
 with header_col:
     st.markdown("""
     <div class="hero">
-        <h1>⚡ QuickAnswer</h1>
+        <h1>🚀 InfoPilot AI</h1>
         <p>Clear answers. Smarter search. Less waiting.</p>
     </div>
     """, unsafe_allow_html=True)
@@ -211,8 +211,7 @@ for chat_message in st.session_state.history:
 
 
 # Chat Input
-query = st.chat_input("Message QuickAnswer...")
-
+query = st.chat_input("Message InfoPilot AI...")
 
 if query:
 
@@ -288,7 +287,7 @@ if query:
 # Footer
 st.markdown(
     "<p style='text-align:center; color:gray; font-size:12px;'>"
-    "QuickAnswer · Powered by OpenRouter and Google Search"
+    "InfoPilot AI · Powered by OpenRouter and Google Search"
     "</p>",
     unsafe_allow_html=True
 )
